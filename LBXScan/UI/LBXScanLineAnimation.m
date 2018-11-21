@@ -92,6 +92,7 @@
     
     self.frame = CGRectMake(leftx, centery+2*num, width, 2);
     self.image = image;
+    self.contentMode = UIViewContentModeScaleAspectFit;
     
     [parentView addSubview:self];
     

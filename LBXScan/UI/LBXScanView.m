@@ -250,7 +250,7 @@ NS_ASSUME_NONNULL_END
         //填充矩形
         
         //扫码区域上面填充
-        CGRect rect = CGRectMake(0, 0, self.frame.size.width, YMinRetangle);
+        CGRect rect = CGRectMake(0, 0, self.frame.size.width, YMinRetangle + 0.06);
         CGContextFillRect(context, rect);
         
         
@@ -263,7 +263,7 @@ NS_ASSUME_NONNULL_END
         CGContextFillRect(context, rect);
         
         //扫码区域下面填充
-        rect = CGRectMake(0, YMaxRetangle, self.frame.size.width,self.frame.size.height - YMaxRetangle);
+        rect = CGRectMake(0, YMaxRetangle - 0.06, self.frame.size.width,self.frame.size.height - YMaxRetangle + 0.06);
         CGContextFillRect(context, rect);
         //执行绘画
         CGContextStrokePath(context);
